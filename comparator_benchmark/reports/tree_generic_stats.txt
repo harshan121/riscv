@@ -1,0 +1,22 @@
+
+10. Printing statistics.
+
+=== comparator_tree ===
+
+   Number of wires:                409
+   Number of wire bits:            535
+   Number of public wires:           7
+   Number of public wire bits:     133
+   Number of ports:                  6
+   Number of port bits:            132
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                406
+     $_AND_                        111
+     $_NAND_                       149
+     $_NOR_                         18
+     $_NOT_                         66
+     $_OR_                          46
+     $_XNOR_                        16
+

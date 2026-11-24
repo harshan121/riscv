@@ -1,0 +1,11 @@
+# Simulation / synthesis build output
+build/
+obj_*/
+comparator_benchmark/obj_*/
+comparator_benchmark/signed_le_experiment/obj_*/
+*.vcd
+*.fst
+__pycache__/
+
+# Locally downloaded third-party tools
+comparator_benchmark/.tool-cache/

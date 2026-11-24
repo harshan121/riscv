@@ -1,0 +1,68 @@
+OpenSTA 2.0.17 GITDIR-NOT Copyright (c) 2019, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Startpoint: a[1] (input port clocked by virtual_clk)
+Endpoint: result[63] (output port clocked by virtual_clk)
+Path Group: virtual_clk
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock virtual_clk (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.1000    0.1000 ^ input external delay
+   0.0000    0.1000 ^ a[1] (in)
+   0.0814    0.1814 ^ _1161_/Z (XOR2_X1)
+   0.0308    0.2122 v _1359_/ZN (AOI21_X1)
+   0.0489    0.2611 ^ _1366_/ZN (OAI21_X1)
+   0.0280    0.2891 v _1376_/ZN (AOI21_X1)
+   0.0474    0.3365 ^ _1384_/ZN (OAI21_X1)
+   0.0274    0.3639 v _1393_/ZN (AOI21_X1)
+   0.0484    0.4122 ^ _1402_/ZN (OAI21_X1)
+   0.0286    0.4408 v _1404_/ZN (NAND2_X1)
+   0.0658    0.5066 ^ _1453_/ZN (AOI211_X1)
+   0.0341    0.5407 v _1460_/ZN (OAI21_X1)
+   0.0689    0.6096 ^ _1493_/ZN (AOI211_X1)
+   0.0322    0.6418 v _1502_/ZN (OAI21_X1)
+   0.0440    0.6857 ^ _1543_/ZN (AOI21_X1)
+   0.0328    0.7185 v _1588_/ZN (OAI211_X1)
+   0.0529    0.7714 ^ _1593_/ZN (AOI21_X1)
+   0.0305    0.8019 v _1633_/ZN (OAI21_X1)
+   0.0515    0.8535 ^ _1637_/ZN (AOI21_X1)
+   0.0305    0.8840 v _1677_/ZN (OAI21_X1)
+   0.0476    0.9316 ^ _1682_/ZN (AOI21_X1)
+   0.0274    0.9591 v _1716_/ZN (OAI21_X1)
+   0.0661    1.0252 ^ _1758_/ZN (AOI211_X1)
+   0.0321    1.0572 v _1764_/ZN (OAI21_X1)
+   0.0446    1.1018 ^ _1807_/ZN (AOI21_X1)
+   0.0271    1.1290 v _1813_/ZN (OAI21_X1)
+   0.0529    1.1819 ^ _1855_/ZN (AOI21_X1)
+   0.0384    1.2203 v _1900_/ZN (OAI211_X1)
+   0.0638    1.2841 ^ _1907_/ZN (AOI21_X1)
+   0.0459    1.3300 v _1940_/ZN (OAI211_X1)
+   0.0710    1.4010 ^ _1991_/ZN (AOI211_X1)
+   0.0345    1.4355 v _1999_/ZN (OAI21_X1)
+   0.0540    1.4895 ^ _2009_/ZN (AOI21_X1)
+   0.0327    1.5222 v _2019_/ZN (OAI21_X1)
+   0.0241    1.5463 ^ _2028_/ZN (NAND3_X1)
+   0.0147    1.5611 v _2030_/ZN (NAND2_X1)
+   0.0330    1.5940 ^ _2035_/ZN (OAI21_X1)
+   0.0000    1.5940 ^ result[63] (out)
+             1.5940   data arrival time
+
+   1.0000    1.0000   clock virtual_clk (rise edge)
+   0.0000    1.0000   clock network delay (ideal)
+   0.0000    1.0000   clock reconvergence pessimism
+  -0.1000    0.9000   output external delay
+             0.9000   data required time
+-------------------------------------------------------------
+             0.9000   data required time
+            -1.5940   data arrival time
+-------------------------------------------------------------
+            -0.6940   slack (VIOLATED)
+
+
+Saving command history

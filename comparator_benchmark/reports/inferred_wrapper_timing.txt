@@ -1,0 +1,42 @@
+OpenSTA 2.0.17 GITDIR-NOT Copyright (c) 2019, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Startpoint: a[22] (input port clocked by virtual_clk)
+Endpoint: result (output port clocked by virtual_clk)
+Path Group: virtual_clk
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock virtual_clk (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.1000    0.1000 v input external delay
+   0.0000    0.1000 v a[22] (in)
+   0.0517    0.1517 v _427_/Z (XOR2_X1)
+   0.0865    0.2382 ^ _429_/ZN (AOI211_X1)
+   0.0452    0.2834 v _432_/ZN (OAI211_X1)
+   0.0571    0.3405 ^ _501_/ZN (NOR3_X1)
+   0.0196    0.3601 v _502_/ZN (NAND2_X1)
+   0.0415    0.4016 ^ _503_/ZN (AOI21_X1)
+   0.0200    0.4216 v _504_/ZN (OAI21_X1)
+   0.0331    0.4547 ^ _505_/ZN (AOI21_X1)
+   0.0194    0.4742 v _518_/ZN (OAI33_X1)
+   0.0000    0.4742 v result (out)
+             0.4742   data arrival time
+
+   1.0000    1.0000   clock virtual_clk (rise edge)
+   0.0000    1.0000   clock network delay (ideal)
+   0.0000    1.0000   clock reconvergence pessimism
+  -0.1000    0.9000   output external delay
+             0.9000   data required time
+-------------------------------------------------------------
+             0.9000   data required time
+            -0.4742   data arrival time
+-------------------------------------------------------------
+             0.4258   slack (MET)
+
+
+Saving command history

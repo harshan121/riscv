@@ -1,0 +1,20 @@
+%Error: comparator_benchmark/signed_le_experiment/tb/tb_comparator.sv:13:5: Cannot find file containing module: 'less_than_equal_tree'
+   13 |     less_than_equal_tree tree_dut (.a(a), .b(b), .result(tree_result));
+      |     ^~~~~~~~~~~~~~~~~~~~
+%Error: comparator_benchmark/signed_le_experiment/tb/tb_comparator.sv:13:5: This may be because there's no search path specified with -I<dir>.
+   13 |     less_than_equal_tree tree_dut (.a(a), .b(b), .result(tree_result));
+      |     ^~~~~~~~~~~~~~~~~~~~
+        ... Looked in:
+             less_than_equal_tree
+             less_than_equal_tree.v
+             less_than_equal_tree.sv
+             comparator_benchmark/signed_le_experiment/obj_dir/less_than_equal_tree
+             comparator_benchmark/signed_le_experiment/obj_dir/less_than_equal_tree.v
+             comparator_benchmark/signed_le_experiment/obj_dir/less_than_equal_tree.sv
+%Error: comparator_benchmark/signed_le_experiment/tb/tb_comparator.sv:14:5: Cannot find file containing module: 'less_than_equal_inferred'
+   14 |     less_than_equal_inferred inferred_dut (.a(a), .b(b), .result(inferred_result));
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+%Error: comparator_benchmark/signed_le_experiment/tb/tb_comparator.sv:15:5: Cannot find file containing module: 'less_than_equal_tree_optimized'
+   15 |     less_than_equal_tree_optimized optimized_dut (.a(a), .b(b), .result(optimized_result));
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Error: Exiting due to 4 error(s)

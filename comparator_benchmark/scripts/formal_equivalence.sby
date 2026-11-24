@@ -1,0 +1,17 @@
+[options]
+mode prove
+depth 1
+
+[engines]
+smtbmc
+
+[script]
+read -formal -sv comparator_benchmark/rtl/comparator_inferred.sv
+read -formal -sv comparator_benchmark/rtl/comparator_tree.sv
+read -formal -sv comparator_benchmark/scripts/formal_miter.sv
+prep -top formal_miter
+
+[files]
+comparator_benchmark/rtl/comparator_inferred.sv
+comparator_benchmark/rtl/comparator_tree.sv
+comparator_benchmark/scripts/formal_miter.sv

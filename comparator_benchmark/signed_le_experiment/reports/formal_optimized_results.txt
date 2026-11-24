@@ -1,0 +1,308 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)
+
+-- Running command `read_verilog -formal -sv comparator_benchmark/signed_le_experiment/rtl/less_than_equal_tree_optimized.sv; read_verilog -formal -sv comparator_benchmark/signed_le_experiment/rtl/less_than_equal_inferred.sv; miter -equiv -make_assert -flatten less_than_equal_inferred less_than_equal_tree_optimized inferred_vs_optimized; prep -top inferred_vs_optimized -flatten; techmap; opt; sat -prove-asserts -verify' --
+
+1. Executing Verilog-2005 frontend: comparator_benchmark/signed_le_experiment/rtl/less_than_equal_tree_optimized.sv
+Parsing formal SystemVerilog input from `comparator_benchmark/signed_le_experiment/rtl/less_than_equal_tree_optimized.sv' to AST representation.
+Generating RTLIL representation for module `\less_than_equal_tree_optimized'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: comparator_benchmark/signed_le_experiment/rtl/less_than_equal_inferred.sv
+Parsing formal SystemVerilog input from `comparator_benchmark/signed_le_experiment/rtl/less_than_equal_inferred.sv' to AST representation.
+Generating RTLIL representation for module `\less_than_equal_inferred_param'.
+Generating RTLIL representation for module `\less_than_equal_inferred'.
+Successfully finished Verilog frontend.
+
+3. Executing MITER pass (creating miter circuit).
+Creating miter cell "inferred_vs_optimized" with gold cell "less_than_equal_inferred" and gate cell "less_than_equal_tree_optimized".
+
+3.1. Executing FLATTEN pass (flatten design).
+<suppressed ~3 debug messages>
+
+3.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module inferred_vs_optimized.
+Removed 0 unused cells and 256 unused wires.
+
+4. Executing PREP pass.
+
+4.1. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1.1. Analyzing design hierarchy..
+Top module:  \inferred_vs_optimized
+
+4.1.2. Analyzing design hierarchy..
+Top module:  \inferred_vs_optimized
+Removing unused module `\less_than_equal_inferred'.
+Removing unused module `\less_than_equal_inferred_param'.
+Removing unused module `\less_than_equal_tree_optimized'.
+Removed 3 unused modules.
+Module inferred_vs_optimized directly or indirectly contains formal properties -> setting "keep" attribute.
+
+4.2. Executing PROC pass (convert processes to netlists).
+
+4.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+4.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+4.2.4. Executing PROC_INIT pass (extract init attributes).
+
+4.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+4.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+4.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+4.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module inferred_vs_optimized.
+
+4.3. Executing FLATTEN pass (flatten design).
+
+4.4. Executing FUTURE pass.
+
+4.5. Executing OPT_EXPR pass (perform const folding).
+Optimizing module inferred_vs_optimized.
+
+4.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \inferred_vs_optimized..
+
+4.7. Executing CHECK pass (checking for obvious problems).
+Checking module inferred_vs_optimized...
+Found and reported 0 problems.
+
+4.8. Executing OPT pass (performing simple optimizations).
+
+4.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module inferred_vs_optimized.
+
+4.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\inferred_vs_optimized'.
+Removed a total of 0 cells.
+
+4.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \inferred_vs_optimized..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1 debug messages>
+
+4.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \inferred_vs_optimized.
+Performed a total of 0 changes.
+
+4.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\inferred_vs_optimized'.
+Removed a total of 0 cells.
+
+4.8.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \inferred_vs_optimized..
+
+4.8.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module inferred_vs_optimized.
+
+4.8.8. Finished OPT passes. (There is nothing left to do.)
+
+4.9. Executing WREDUCE pass (reducing word size of cells).
+
+4.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \inferred_vs_optimized..
+
+4.11. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+4.12. Executing OPT pass (performing simple optimizations).
+
+4.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module inferred_vs_optimized.
+
+4.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\inferred_vs_optimized'.
+Removed a total of 0 cells.
+
+4.12.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \inferred_vs_optimized..
+
+4.12.4. Finished fast OPT passes.
+
+4.13. Printing statistics.
+
+=== inferred_vs_optimized ===
+
+   Number of wires:                222
+   Number of wire bits:            966
+   Number of public wires:          28
+   Number of public wire bits:     772
+   Number of ports:                  3
+   Number of port bits:            129
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                455
+     $and                          190
+     $assert                         1
+     $eqx                            1
+     $le                             1
+     $mux                            1
+     $ne                             1
+     $not                          129
+     $or                            64
+     $scopeinfo                      3
+     $xor                           64
+
+4.14. Executing CHECK pass (checking for obvious problems).
+Checking module inferred_vs_optimized...
+Found and reported 0 problems.
+
+5. Executing TECHMAP pass (map to technology primitives).
+
+5.1. Executing Verilog-2005 frontend: /home/harshan/harshan-project-2026/sha3-koika-archive-20261004/tool-cache/adder-eda/yosys/usr/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/home/harshan/harshan-project-2026/sha3-koika-archive-20261004/tool-cache/adder-eda/yosys/usr/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+5.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $eqx.
+Using extmapper simplemap for cells of type $not.
+Running "alumacc" on wrapper $extern:wrap:$le:A_SIGNED=1:A_WIDTH=64:B_SIGNED=1:B_WIDTH=64:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$le:A_SIGNED=1:A_WIDTH=64:B_SIGNED=1:B_WIDTH=64:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$le:A_SIGNED=1:A_WIDTH=64:B_SIGNED=1:B_WIDTH=64:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $reduce_and.
+Using template $paramod$c902248951c526246774c2c266eae0951dd5fd6e\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $reduce_or.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000001000000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+No more expansions possible.
+<suppressed ~1041 debug messages>
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module inferred_vs_optimized.
+<suppressed ~68 debug messages>
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\inferred_vs_optimized'.
+<suppressed ~174 debug messages>
+Removed a total of 58 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \inferred_vs_optimized..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \inferred_vs_optimized.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\inferred_vs_optimized'.
+Removed a total of 0 cells.
+
+6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \inferred_vs_optimized..
+Removed 167 unused cells and 144 unused wires.
+<suppressed ~168 debug messages>
+
+6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module inferred_vs_optimized.
+
+6.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \inferred_vs_optimized..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \inferred_vs_optimized.
+Performed a total of 0 changes.
+
+6.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\inferred_vs_optimized'.
+Removed a total of 0 cells.
+
+6.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \inferred_vs_optimized..
+
+6.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module inferred_vs_optimized.
+
+6.16. Finished OPT passes. (There is nothing left to do.)
+
+7. Executing SAT pass (solving SAT problems in the circuit).
+
+Setting up SAT problem:
+Final constraint equation: { } = { }
+Imported 849 cells to SAT database.
+Import proof for assert: $auto$miter.cc:242:create_miter_equiv$451 when 1'1.
+
+Solving problem with 4428 variables and 11208 clauses..
+SAT proof finished - no model found: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+
+End of script. Logfile hash: 0bc812e8f5, CPU: user 0.13s system 0.01s, MEM: 21.78 MB peak
+Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)
+Time spent: 18% 1x techmap (0 sec), 18% 11x opt_expr (0 sec), ...

@@ -1,0 +1,45 @@
+
+13. Printing statistics.
+
+=== rv64_alu_tree_optimized ===
+
+   Number of wires:               1010
+   Number of wire bits:           1516
+   Number of public wires:          10
+   Number of public wire bits:     516
+   Number of ports:                  4
+   Number of port bits:            194
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1066
+     $scopeinfo                      2
+     AND2_X1                        34
+     AND3_X1                         2
+     AND4_X1                         2
+     AOI211_X1                      16
+     AOI21_X1                      131
+     AOI221_X1                      11
+     AOI222_X1                       1
+     AOI22_X1                       32
+     INV_X1                        122
+     NAND2_X1                      190
+     NAND3_X1                       24
+     NAND4_X1                        6
+     NOR2_X1                       129
+     NOR3_X1                        35
+     NOR4_X1                         6
+     OAI211_X1                      27
+     OAI21_X1                      152
+     OAI221_X1                      13
+     OAI22_X1                        6
+     OR2_X1                         23
+     OR3_X1                          9
+     XNOR2_X1                       66
+     XOR2_X1                        27
+
+   Area for cell type $scopeinfo is unknown!
+
+   Chip area for module '\rv64_alu_tree_optimized': 1074.374000
+     of which used for sequential elements: 0.000000 (0.00%)
+

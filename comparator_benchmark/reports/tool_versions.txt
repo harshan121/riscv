@@ -1,0 +1,6 @@
+Comparator benchmark tool discovery
+Date (UTC): 2026-11-05T23:06:45Z
+Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)
+Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+SymbiYosys: unavailable
+Liberty: /home/harshan/harshan-project-2026/sha3-koika-archive-20261004/tool-cache/adder-eda/technology/typical.lib

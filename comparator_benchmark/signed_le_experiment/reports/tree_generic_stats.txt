@@ -1,0 +1,21 @@
+
+9. Printing statistics.
+
+=== less_than_equal_tree ===
+
+   Number of wires:                480
+   Number of wire bits:            732
+   Number of public wires:           6
+   Number of public wire bits:     258
+   Number of ports:                  3
+   Number of port bits:            129
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                476
+     $_AND_                        200
+     $_NOT_                        101
+     $_OR_                         151
+     $_XOR_                         23
+     $scopeinfo                      1
+

@@ -1,0 +1,6 @@
+TESTS=100015 MISMATCHES=0
+PASS
+- comparator_benchmark/tb/tb_comparator.sv:116: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.032 2025-01-01
+- Verilator: $finish at 100us; walltime 0.069 s; speed 1.434 ms/s
+- Verilator: cpu 0.070 s on 1 threads; alloced 153 MB

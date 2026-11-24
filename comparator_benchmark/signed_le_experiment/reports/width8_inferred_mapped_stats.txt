@@ -1,0 +1,31 @@
+
+11. Printing statistics.
+
+=== less_than_equal_inferred_param ===
+
+   Number of wires:                 32
+   Number of wire bits:             46
+   Number of public wires:           3
+   Number of public wire bits:      17
+   Number of ports:                  3
+   Number of port bits:             17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     AND2_X1                         1
+     AOI211_X1                       2
+     AOI21_X1                        3
+     AOI221_X1                       1
+     AOI22_X1                        2
+     INV_X1                          9
+     NAND2_X1                        3
+     NOR2_X1                         1
+     NOR3_X1                         1
+     OAI211_X1                       3
+     OAI22_X1                        2
+     XNOR2_X1                        2
+
+   Chip area for module '\less_than_equal_inferred_param': 30.058000
+     of which used for sequential elements: 0.000000 (0.00%)
+

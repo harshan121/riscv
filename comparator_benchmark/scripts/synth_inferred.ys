@@ -1,0 +1,13 @@
+# Technology-independent baseline synthesis. Run from repository root.
+read_verilog -sv comparator_benchmark/rtl/comparator_inferred.sv
+hierarchy -check -top comparator_inferred
+proc
+opt
+flatten
+opt
+techmap
+opt
+abc -g AND,OR,XOR,XNOR,NAND,NOR
+clean
+tee -o comparator_benchmark/reports/inferred_generic_stats.txt stat
+write_json comparator_benchmark/reports/inferred_generic.json

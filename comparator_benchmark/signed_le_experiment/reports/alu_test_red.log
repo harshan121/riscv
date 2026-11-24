@@ -1,0 +1,20 @@
+%Error: comparator_benchmark/signed_le_experiment/tb/tb_alu_wrappers.sv:8:5: Cannot find file containing module: 'rv64_alu_inferred'
+    8 |     rv64_alu_inferred inferred_dut (.a(a), .b(b), .op(op), .result(inferred_result));
+      |     ^~~~~~~~~~~~~~~~~
+%Error: comparator_benchmark/signed_le_experiment/tb/tb_alu_wrappers.sv:8:5: This may be because there's no search path specified with -I<dir>.
+    8 |     rv64_alu_inferred inferred_dut (.a(a), .b(b), .op(op), .result(inferred_result));
+      |     ^~~~~~~~~~~~~~~~~
+        ... Looked in:
+             rv64_alu_inferred
+             rv64_alu_inferred.v
+             rv64_alu_inferred.sv
+             comparator_benchmark/signed_le_experiment/obj_alu_red/rv64_alu_inferred
+             comparator_benchmark/signed_le_experiment/obj_alu_red/rv64_alu_inferred.v
+             comparator_benchmark/signed_le_experiment/obj_alu_red/rv64_alu_inferred.sv
+%Error: comparator_benchmark/signed_le_experiment/tb/tb_alu_wrappers.sv:9:5: Cannot find file containing module: 'rv64_alu_tree'
+    9 |     rv64_alu_tree tree_dut (.a(a), .b(b), .op(op), .result(tree_result));
+      |     ^~~~~~~~~~~~~
+%Error: comparator_benchmark/signed_le_experiment/tb/tb_alu_wrappers.sv:10:5: Cannot find file containing module: 'rv64_alu_tree_optimized'
+   10 |     rv64_alu_tree_optimized optimized_dut (.a(a), .b(b), .op(op), .result(optimized_result));
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+%Error: Exiting due to 4 error(s)

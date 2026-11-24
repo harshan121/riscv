@@ -1,0 +1,17 @@
+%Error: comparator_benchmark/tb/tb_comparator.sv:19:5: Cannot find file containing module: 'comparator_inferred'
+   19 |     comparator_inferred inferred_dut (
+      |     ^~~~~~~~~~~~~~~~~~~
+%Error: comparator_benchmark/tb/tb_comparator.sv:19:5: This may be because there's no search path specified with -I<dir>.
+   19 |     comparator_inferred inferred_dut (
+      |     ^~~~~~~~~~~~~~~~~~~
+        ... Looked in:
+             comparator_inferred
+             comparator_inferred.v
+             comparator_inferred.sv
+             obj_dir/comparator_inferred
+             obj_dir/comparator_inferred.v
+             obj_dir/comparator_inferred.sv
+%Error: comparator_benchmark/tb/tb_comparator.sv:25:5: Cannot find file containing module: 'comparator_tree'
+   25 |     comparator_tree tree_dut (
+      |     ^~~~~~~~~~~~~~~
+%Error: Exiting due to 3 error(s)

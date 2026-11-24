@@ -1,0 +1,7 @@
+TESTS=100015 MISMATCHES=0
+PASS
+- comparator_benchmark/tb/tb_comparator.sv:116: Verilog $finish
+FAIL
+[100015000] %Fatal: tb_comparator.sv:119: Assertion failed in tb_comparator.run_tests: Comparator verification failed
+%Error: comparator_benchmark/tb/tb_comparator.sv:119: Verilog $stop
+Aborting...

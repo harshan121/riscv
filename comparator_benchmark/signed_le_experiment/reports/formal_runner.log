@@ -1,0 +1,32 @@
+Warning: Replacing memory \eq with list of registers. See comparator_benchmark/signed_le_experiment/rtl/less_than_equal_tree.sv:19
+Warning: Replacing memory \lt with list of registers. See comparator_benchmark/signed_le_experiment/rtl/less_than_equal_tree.sv:18
+
+6.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module inferred_vs_optimized.
+
+6.16. Finished OPT passes. (There is nothing left to do.)
+
+7. Executing SAT pass (solving SAT problems in the circuit).
+
+Setting up SAT problem:
+Final constraint equation: { } = { }
+Imported 849 cells to SAT database.
+Import proof for assert: $auto$miter.cc:242:create_miter_equiv$451 when 1'1.
+
+Solving problem with 4428 variables and 11208 clauses..
+SAT proof finished - no model found: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+
+End of script. Logfile hash: 0bc812e8f5, CPU: user 0.14s system 0.01s, MEM: 21.40 MB peak
+Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)
+Time spent: 18% 11x opt_expr (0 sec), 17% 1x techmap (0 sec), ...
+FORMAL_EQUIVALENCE_PASS

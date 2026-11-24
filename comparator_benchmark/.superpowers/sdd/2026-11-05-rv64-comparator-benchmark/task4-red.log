@@ -1,0 +1,17 @@
+%Error: comparator_benchmark/tb/tb_alu_wrapper.sv:10:5: Cannot find file containing module: 'comparator_alu_wrapper'
+   10 |     comparator_alu_wrapper inferred_wrapper (
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+%Error: comparator_benchmark/tb/tb_alu_wrapper.sv:10:5: This may be because there's no search path specified with -I<dir>.
+   10 |     comparator_alu_wrapper inferred_wrapper (
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+        ... Looked in:
+             comparator_alu_wrapper
+             comparator_alu_wrapper.v
+             comparator_alu_wrapper.sv
+             comparator_benchmark/obj_wrapper_red/comparator_alu_wrapper
+             comparator_benchmark/obj_wrapper_red/comparator_alu_wrapper.v
+             comparator_benchmark/obj_wrapper_red/comparator_alu_wrapper.sv
+%Error: comparator_benchmark/tb/tb_alu_wrapper.sv:14:5: Cannot find file containing module: 'comparator_alu_wrapper'
+   14 |     comparator_alu_wrapper tree_wrapper (
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+%Error: Exiting due to 3 error(s)

@@ -1,0 +1,47 @@
+
+14. Printing statistics.
+
+=== comparator_alu_wrapper ===
+
+   Number of wires:                265
+   Number of wire bits:            518
+   Number of public wires:           6
+   Number of public wire bits:     259
+   Number of ports:                  4
+   Number of port bits:            131
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                261
+     $scopeinfo                      1
+     AND2_X1                         2
+     AND4_X1                         1
+     AOI211_X1                      21
+     AOI21_X1                       10
+     AOI221_X1                       1
+     AOI222_X1                       1
+     AOI22_X1                       18
+     INV_X1                         92
+     MUX2_X1                         1
+     NAND2_X1                        9
+     NAND3_X1                        4
+     NAND4_X1                        2
+     NOR2_X1                        17
+     NOR3_X1                         3
+     NOR4_X1                         2
+     OAI211_X1                      14
+     OAI21_X1                       13
+     OAI221_X1                       1
+     OAI222_X1                       1
+     OAI22_X1                       17
+     OAI33_X1                        1
+     OR2_X1                          3
+     OR4_X1                          1
+     XNOR2_X1                        6
+     XOR2_X1                        19
+
+   Area for cell type $scopeinfo is unknown!
+
+   Chip area for module '\comparator_alu_wrapper': 259.616000
+     of which used for sequential elements: 0.000000 (0.00%)
+

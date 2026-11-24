@@ -1,0 +1,189 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)
+
+-- Executing script file `comparator_benchmark/scripts/formal_equivalence.ys' --
+
+1. Executing Verilog-2005 frontend: comparator_benchmark/rtl/comparator_inferred.sv
+Parsing formal SystemVerilog input from `comparator_benchmark/rtl/comparator_inferred.sv' to AST representation.
+Generating RTLIL representation for module `\comparator_inferred'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: comparator_benchmark/rtl/comparator_tree.sv
+Parsing formal SystemVerilog input from `comparator_benchmark/rtl/comparator_tree.sv' to AST representation.
+Generating RTLIL representation for module `\comparator_tree'.
+Successfully finished Verilog frontend.
+
+3. Executing EQUIV_MAKE pass (creating equiv checking module).
+Presumably equivalent wires: unsigned_lte_gold ($le$comparator_benchmark/rtl/comparator_inferred.sv:14$4_Y_gold), unsigned_lte_gate ($or$comparator_benchmark/rtl/comparator_tree.sv:67$8_Y_gate) -> unsigned_lte
+Presumably equivalent wires: unsigned_lt_gold ($lt$comparator_benchmark/rtl/comparator_inferred.sv:13$3_Y_gold), unsigned_lt_gate ($or$comparator_benchmark/rtl/comparator_tree.sv:63$6_Y_gate) -> unsigned_lt
+Presumably equivalent wires: signed_lte_gold ($le$comparator_benchmark/rtl/comparator_inferred.sv:12$2_Y_gold), signed_lte_gate ($or$comparator_benchmark/rtl/comparator_tree.sv:69$11_Y_gate) -> signed_lte
+Presumably equivalent wires: signed_lt_gold ($lt$comparator_benchmark/rtl/comparator_inferred.sv:11$1_Y_gold), signed_lt_gate ($ternary$comparator_benchmark/rtl/comparator_tree.sv:68$10_Y_gate) -> signed_lt
+Presumably equivalent wires: b_gold (\b_gold), b_gate (\b_gate) -> b
+Presumably equivalent wires: a_gold (\a_gold), a_gate (\a_gate) -> a
+Changing input A of cell $or$comparator_benchmark/rtl/comparator_tree.sv:69$11_gate ($or): $ternary$comparator_benchmark/rtl/comparator_tree.sv:68$10_Y_gate -> \signed_lt
+Changing input A of cell $ternary$comparator_benchmark/rtl/comparator_tree.sv:68$10_gate ($mux): $or$comparator_benchmark/rtl/comparator_tree.sv:63$6_Y_gate -> \unsigned_lt
+Changing input A of cell $or$comparator_benchmark/rtl/comparator_tree.sv:67$8_gate ($or): $or$comparator_benchmark/rtl/comparator_tree.sv:63$6_Y_gate -> \unsigned_lt
+
+4. Executing PREP pass.
+
+4.1. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1.1. Analyzing design hierarchy..
+Top module:  \comparator_equiv
+
+4.1.2. Analyzing design hierarchy..
+Top module:  \comparator_equiv
+Removing unused module `\comparator_tree'.
+Removing unused module `\comparator_inferred'.
+Removed 2 unused modules.
+
+4.2. Executing PROC pass (convert processes to netlists).
+
+4.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+4.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+4.2.4. Executing PROC_INIT pass (extract init attributes).
+
+4.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+4.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+4.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+4.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module comparator_equiv.
+
+4.3. Executing FUTURE pass.
+
+4.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module comparator_equiv.
+
+4.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \comparator_equiv..
+Removed 0 unused cells and 261 unused wires.
+<suppressed ~1 debug messages>
+
+4.6. Executing CHECK pass (checking for obvious problems).
+Checking module comparator_equiv...
+Found and reported 0 problems.
+
+4.7. Executing OPT pass (performing simple optimizations).
+
+4.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module comparator_equiv.
+
+4.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\comparator_equiv'.
+Removed a total of 0 cells.
+
+4.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \comparator_equiv..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1 debug messages>
+
+4.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \comparator_equiv.
+Performed a total of 0 changes.
+
+4.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\comparator_equiv'.
+Removed a total of 0 cells.
+
+4.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \comparator_equiv..
+
+4.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module comparator_equiv.
+
+4.7.8. Finished OPT passes. (There is nothing left to do.)
+
+4.8. Executing WREDUCE pass (reducing word size of cells).
+
+4.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \comparator_equiv..
+
+4.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+4.11. Executing OPT pass (performing simple optimizations).
+
+4.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module comparator_equiv.
+
+4.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\comparator_equiv'.
+Removed a total of 0 cells.
+
+4.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \comparator_equiv..
+
+4.11.4. Finished fast OPT passes.
+
+4.12. Printing statistics.
+
+=== comparator_equiv ===
+
+   Number of wires:                224
+   Number of wire bits:            842
+   Number of public wires:          32
+   Number of public wire bits:     650
+   Number of ports:                  6
+   Number of port bits:            132
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                457
+     $and                          190
+     $equiv                          4
+     $le                             2
+     $lt                             2
+     $mux                            1
+     $ne                             1
+     $not                          128
+     $or                            65
+     $xor                           64
+
+4.13. Executing CHECK pass (checking for obvious problems).
+Checking module comparator_equiv...
+Found and reported 0 problems.
+
+5. Executing EQUIV_SIMPLE pass.
+Found 4 unproven $equiv cells (4 groups) in comparator_equiv:
+  Trying to prove $equiv for \signed_lt: success!
+  Trying to prove $equiv for \signed_lte: success!
+  Trying to prove $equiv for \unsigned_lt: success!
+  Trying to prove $equiv for \unsigned_lte: success!
+Proved 4 previously unproven $equiv cells.
+
+6. Executing EQUIV_STATUS pass.
+Found 4 $equiv cells in comparator_equiv:
+  Of those cells 4 are proven and 0 are unproven.
+  Equivalence successfully proven!
+
+End of script. Logfile hash: 5883d14f7a, CPU: user 0.07s system 0.01s, MEM: 17.08 MB peak
+Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)
+Time spent: 43% 1x equiv_simple (0 sec), 15% 4x read_verilog (0 sec), ...

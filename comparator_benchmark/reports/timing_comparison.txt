@@ -1,0 +1,6 @@
+OpenSTA: comparator_benchmark/.tool-cache/opensta/usr/bin/sta
+Constraints: comparator_benchmark/scripts/constraints.sdc
+inferred timing completed.
+tree timing completed.
+inferred_wrapper timing completed.
+tree_wrapper timing completed.

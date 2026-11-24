@@ -1,0 +1,52 @@
+WIDTH=8
+comparator_benchmark/signed_le_experiment/reports/width8_tree_mapped_stats.txt:   Number of cells:                 19
+comparator_benchmark/signed_le_experiment/reports/width8_tree_mapped_stats.txt:   Chip area for module '\less_than_equal_tree_param': 17.822000
+comparator_benchmark/signed_le_experiment/reports/width8_inferred_mapped_stats.txt:   Number of cells:                 30
+comparator_benchmark/signed_le_experiment/reports/width8_inferred_mapped_stats.txt:   Chip area for module '\less_than_equal_inferred_param': 30.058000
+comparator_benchmark/signed_le_experiment/reports/width8_tree_timing.txt:Startpoint: b[0] (input port clocked by virtual_clk)
+comparator_benchmark/signed_le_experiment/reports/width8_tree_timing.txt:Endpoint: result (output port clocked by virtual_clk)
+comparator_benchmark/signed_le_experiment/reports/width8_tree_timing.txt:             0.3066   data arrival time
+comparator_benchmark/signed_le_experiment/reports/width8_tree_timing.txt:            -0.3066   data arrival time
+comparator_benchmark/signed_le_experiment/reports/width8_inferred_timing.txt:Startpoint: a[5] (input port clocked by virtual_clk)
+comparator_benchmark/signed_le_experiment/reports/width8_inferred_timing.txt:Endpoint: result (output port clocked by virtual_clk)
+comparator_benchmark/signed_le_experiment/reports/width8_inferred_timing.txt:             0.2992   data arrival time
+comparator_benchmark/signed_le_experiment/reports/width8_inferred_timing.txt:            -0.2992   data arrival time
+WIDTH=16
+comparator_benchmark/signed_le_experiment/reports/width16_inferred_mapped_stats.txt:   Number of cells:                 61
+comparator_benchmark/signed_le_experiment/reports/width16_inferred_mapped_stats.txt:   Chip area for module '\less_than_equal_inferred_param': 59.052000
+comparator_benchmark/signed_le_experiment/reports/width16_tree_mapped_stats.txt:   Number of cells:                 54
+comparator_benchmark/signed_le_experiment/reports/width16_tree_mapped_stats.txt:   Chip area for module '\less_than_equal_tree_param': 51.072000
+comparator_benchmark/signed_le_experiment/reports/width16_tree_timing.txt:Startpoint: b[2] (input port clocked by virtual_clk)
+comparator_benchmark/signed_le_experiment/reports/width16_tree_timing.txt:Endpoint: result (output port clocked by virtual_clk)
+comparator_benchmark/signed_le_experiment/reports/width16_tree_timing.txt:             0.3634   data arrival time
+comparator_benchmark/signed_le_experiment/reports/width16_tree_timing.txt:            -0.3634   data arrival time
+comparator_benchmark/signed_le_experiment/reports/width16_inferred_timing.txt:Startpoint: b[11] (input port clocked by virtual_clk)
+comparator_benchmark/signed_le_experiment/reports/width16_inferred_timing.txt:Endpoint: result (output port clocked by virtual_clk)
+comparator_benchmark/signed_le_experiment/reports/width16_inferred_timing.txt:             0.4190   data arrival time
+comparator_benchmark/signed_le_experiment/reports/width16_inferred_timing.txt:            -0.4190   data arrival time
+WIDTH=32
+comparator_benchmark/signed_le_experiment/reports/width32_inferred_mapped_stats.txt:   Number of cells:                134
+comparator_benchmark/signed_le_experiment/reports/width32_inferred_mapped_stats.txt:   Chip area for module '\less_than_equal_inferred_param': 132.468000
+comparator_benchmark/signed_le_experiment/reports/width32_tree_mapped_stats.txt:   Number of cells:                115
+comparator_benchmark/signed_le_experiment/reports/width32_tree_mapped_stats.txt:   Chip area for module '\less_than_equal_tree_param': 106.400000
+comparator_benchmark/signed_le_experiment/reports/width32_tree_timing.txt:Startpoint: b[3] (input port clocked by virtual_clk)
+comparator_benchmark/signed_le_experiment/reports/width32_tree_timing.txt:Endpoint: result (output port clocked by virtual_clk)
+comparator_benchmark/signed_le_experiment/reports/width32_tree_timing.txt:             0.4222   data arrival time
+comparator_benchmark/signed_le_experiment/reports/width32_tree_timing.txt:            -0.4222   data arrival time
+comparator_benchmark/signed_le_experiment/reports/width32_inferred_timing.txt:Startpoint: a[6] (input port clocked by virtual_clk)
+comparator_benchmark/signed_le_experiment/reports/width32_inferred_timing.txt:Endpoint: result (output port clocked by virtual_clk)
+comparator_benchmark/signed_le_experiment/reports/width32_inferred_timing.txt:             0.4213   data arrival time
+comparator_benchmark/signed_le_experiment/reports/width32_inferred_timing.txt:            -0.4213   data arrival time
+WIDTH=64
+comparator_benchmark/signed_le_experiment/reports/width64_tree_mapped_stats.txt:   Number of cells:                231
+comparator_benchmark/signed_le_experiment/reports/width64_tree_mapped_stats.txt:   Chip area for module '\less_than_equal_tree_param': 221.578000
+comparator_benchmark/signed_le_experiment/reports/width64_inferred_mapped_stats.txt:   Number of cells:                267
+comparator_benchmark/signed_le_experiment/reports/width64_inferred_mapped_stats.txt:   Chip area for module '\less_than_equal_inferred_param': 262.542000
+comparator_benchmark/signed_le_experiment/reports/width64_tree_timing.txt:Startpoint: a[0] (input port clocked by virtual_clk)
+comparator_benchmark/signed_le_experiment/reports/width64_tree_timing.txt:Endpoint: result (output port clocked by virtual_clk)
+comparator_benchmark/signed_le_experiment/reports/width64_tree_timing.txt:             0.4954   data arrival time
+comparator_benchmark/signed_le_experiment/reports/width64_tree_timing.txt:            -0.4954   data arrival time
+comparator_benchmark/signed_le_experiment/reports/width64_inferred_timing.txt:Startpoint: a[22] (input port clocked by virtual_clk)
+comparator_benchmark/signed_le_experiment/reports/width64_inferred_timing.txt:Endpoint: result (output port clocked by virtual_clk)
+comparator_benchmark/signed_le_experiment/reports/width64_inferred_timing.txt:             0.6105   data arrival time
+comparator_benchmark/signed_le_experiment/reports/width64_inferred_timing.txt:            -0.6105   data arrival time

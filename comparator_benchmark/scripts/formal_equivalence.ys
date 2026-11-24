@@ -1,0 +1,6 @@
+read_verilog -formal -sv comparator_benchmark/rtl/comparator_inferred.sv
+read_verilog -formal -sv comparator_benchmark/rtl/comparator_tree.sv
+equiv_make comparator_inferred comparator_tree comparator_equiv
+prep -top comparator_equiv
+equiv_simple
+equiv_status -assert

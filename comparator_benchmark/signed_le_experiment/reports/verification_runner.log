@@ -1,0 +1,39 @@
+Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+make: Entering directory '/home/harshan/riscv/comparator_benchmark/signed_le_experiment/obj_dir'
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /usr/share/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o /usr/share/verilator/include/verilated_threads.cpp
+python3 /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtb_comparator.cpp Vtb_comparator___024root__DepSet_hfce68ba7__0.cpp Vtb_comparator___024root__DepSet_hf56e54e0__0.cpp Vtb_comparator__main.cpp Vtb_comparator__Trace__0.cpp Vtb_comparator__ConstPool_0.cpp Vtb_comparator___024root__Slow.cpp Vtb_comparator___024root__DepSet_hfce68ba7__0__Slow.cpp Vtb_comparator___024root__DepSet_hf56e54e0__0__Slow.cpp Vtb_comparator__Syms.cpp Vtb_comparator__Trace__0__Slow.cpp Vtb_comparator__TraceDecls__0__Slow.cpp > Vtb_comparator__ALL.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o Vtb_comparator__ALL.o Vtb_comparator__ALL.cpp
+echo "" > Vtb_comparator__ALL.verilator_deplist.tmp
+g++    verilated.o verilated_vcd_c.o verilated_timing.o verilated_threads.o Vtb_comparator__ALL.a    -pthread -lpthread -latomic   -o Vtb_comparator
+rm Vtb_comparator__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/harshan/riscv/comparator_benchmark/signed_le_experiment/obj_dir'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.068 MB sources in 7 modules, into 0.556 MB in 12 C++ files needing 0.001 MB
+- Verilator: Walltime 6.486 s (elab=0.010, cvt=0.041, bld=6.424); cpu 0.062 s on 1 threads; alloced 12.469 MB
+TESTS=100016 MISMATCHES=0
+FUNCTIONAL_VERIFICATION_PASS
+- comparator_benchmark/signed_le_experiment/tb/tb_comparator.sv:75: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.032 2025-01-01
+- Verilator: $finish at 100us; walltime 0.141 s; speed 707.381 us/s
+- Verilator: cpu 0.141 s on 1 threads; alloced 153 MB
+make: Entering directory '/home/harshan/riscv/comparator_benchmark/signed_le_experiment/obj_alu'
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /usr/share/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o /usr/share/verilator/include/verilated_threads.cpp
+python3 /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtb_alu_wrappers.cpp Vtb_alu_wrappers___024root__DepSet_h989fc957__0.cpp Vtb_alu_wrappers___024root__DepSet_h6a784664__0.cpp Vtb_alu_wrappers__main.cpp Vtb_alu_wrappers___024root__Slow.cpp Vtb_alu_wrappers___024root__DepSet_h989fc957__0__Slow.cpp Vtb_alu_wrappers___024root__DepSet_h6a784664__0__Slow.cpp Vtb_alu_wrappers__Syms.cpp > Vtb_alu_wrappers__ALL.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o Vtb_alu_wrappers__ALL.o Vtb_alu_wrappers__ALL.cpp
+echo "" > Vtb_alu_wrappers__ALL.verilator_deplist.tmp
+g++    verilated.o verilated_timing.o verilated_threads.o Vtb_alu_wrappers__ALL.a    -pthread -lpthread -latomic   -o Vtb_alu_wrappers
+rm Vtb_alu_wrappers__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/harshan/riscv/comparator_benchmark/signed_le_experiment/obj_alu'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.084 MB sources in 11 modules, into 0.368 MB in 8 C++ files needing 0.000 MB
+- Verilator: Walltime 4.588 s (elab=0.009, cvt=0.031, bld=4.543); cpu 0.046 s on 1 threads; alloced 12.617 MB
+ALU_INTEGRATION_FUNCTIONAL_PASS
+- comparator_benchmark/signed_le_experiment/tb/tb_alu_wrappers.sv:38: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.032 2025-01-01
+- Verilator: $finish at 6ns; walltime 0.001 s; speed 5.112 us/s
+- Verilator: cpu 0.001 s on 1 threads; alloced 153 MB

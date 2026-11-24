@@ -1,0 +1,1 @@
+Power unavailable: no supported power-analysis tool/flow was detected; no numerical power estimate is reported.
